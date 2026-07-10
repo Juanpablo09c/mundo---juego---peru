@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Juegos Perú - Juega Gratis</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        :root { --azul: #165DFF; --naranja: #FF7A45; --oscuro: #1E293B; --claro: #F8FAFC; }
+        body { background: var(--claro); color: var(--oscuro); }
+
+        /* Cabecera */
+        header { background: linear-gradient(135deg, var(--azul), #0F4CD0); color: white; padding: 1.5rem; text-align: center; }
+        nav { margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        nav button { background: rgba(255,255,255,0.2); border: none; padding: 0.6rem 1.2rem; border-radius: 20px; color: white; cursor: pointer; transition: 0.3s; }
+        nav button:hover, nav button.activo { background: var(--naranja); }
+
+        /* Sección Publicidad */
+        .anuncio-superior { max-width: 1200px; margin: 1.5rem auto; padding: 1rem; border: 2px dashed #CBD5E1; border-radius: 8px; text-align: center; color: #64748B; }
+
+        /* Cuadrícula de Juegos */
+        .contenedor { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+        .cuadricula-juegos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
+        .tarjeta-juego { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; cursor: pointer; }
+        .tarjeta-juego:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+        .miniatura { width: 100%; height: 140px; background: #E2E8F0; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+        .info-juego { padding: 1rem; text-align: center; }
+        .info-juego h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .etiqueta { display: inline-block; background: #E0F2FE; color: var(--azul); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.8rem; }
+
+        /* Pie de página */
+        footer { background: var(--oscuro); color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎮 Mundo Juegos Perú</h1>
+    <p>Los mejores juegos gratis, sin descargas</p>
+    <nav>
+        <button class="activo">Todos</button>
+        <button>Acción</button>
+        <button>Deportes</button>
+        <button>Lógica</button>
+        <button>Clásicos</button>
+    </nav>
+</header>
+
+<!-- Aquí colocarás tus anuncios de AdSense -->
+<div class="anuncio-superior">
+    🔔 Espacio para publicidad superior (aquí pegas el código de Google AdSense)
+</div>
+
+<main class="contenedor">
+    <div class="cuadricula-juegos">
+        <!-- Tarjeta de juego 1 -->
+        <div class="tarjeta-juego">
+            <div class="miniatura">🏎️</div>
+            <div class="info-juego">
+                <h3>Carrera de Autos</h3>
+                <span class="etiqueta">Carreras</span>
+            </div>
+        </div>
+        <!-- Tarjeta de juego 2 -->
+        <div class="tarjeta-juego">
+            <div class="miniatura">🧩</div>
+            <div class="info-juego">
+                <h3>Rompecabezas</h3>
+                <span class="etiqueta">Lógica</span>
+            </div>
+        </div>
+        <!-- Tarjeta de juego 3 -->
+        <div class="tarjeta-juego">
+            <div class="miniatura">⚽</div>
+            <div class="info-juego">
+                <h3>Fútbol Rápido</h3>
+                <span class="etiqueta">Deportes</span>
+            </div>
+        </div>
+        <!-- Tarjeta de juego 4 -->
+        <div class="tarjeta-juego">
+            <div class="miniatura">🔫</div>
+            <div class="info-juego">
+                <h3>Defensa de la Torre</h3>
+                <span class="etiqueta">Estrategia</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Mundo Juegos Perú | Genera ingresos con publicidad legítima</p>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Cumplimos con la normativa peruana SUNAT y protección de datos</p>
+</footer>
+
+</body>
+</html>
